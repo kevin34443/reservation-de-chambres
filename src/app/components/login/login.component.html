@@ -1,0 +1,16 @@
+<html>
+    <head><meta charset="utf-8"></head>
+    <body>
+<form [formGroup]="form">
+     
+    <h1>connect you! </h1>
+    <div class="inputs_container">  
+    <input class="form-control" type="text" formControlName="username" placeholder=" Entrez votre nom d utilisateur">
+    <input class="form-control" type="text" formControlName="passwort" placeholder="Entrez votre mot de passe">
+    </div>
+    <button type="submit" (click)="seConnecter(form)" class="btn" > Envoyer</button>
+  <!--   <p *ngIf="showError">{{errorMessage}}</p> -->
+     <p> {{errorMessage}}</p>
+</form>
+</body>
+</html>

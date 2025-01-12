@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<form [formGroup]="formGroup">
+
+    <div class="global_dates">
+        <div class="arrival"> <span>arrival date</span>
+            <p-datepicker formControlName="startDate" />
+        </div>
+        <div class="departure">
+            <span>departure date </span>
+            <p-datepicker formControlName="endDate" />
+         
+        </div>
+    </div>
+    
+</form>
+   <button type="submit" [disabled]="!formGroup.valid"> Surch for available rooms</button>
